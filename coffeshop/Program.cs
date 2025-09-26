@@ -1,9 +1,18 @@
 
+using Coffeshop.Configurations;
 using Coffeshop.Mapping;
 using Coffeshop.Repositories;
 using Coffeshop.Service;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add(new AuthorizeFilter()); // Áp dụng bảo vệ toàn bộ API
+});
+
 
 // 1. Add services to the container
 builder.Services.AddControllers();
@@ -11,7 +20,7 @@ builder.Services.AddControllers();
 // 2. Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
-builder.Services.AddSwaggerGen();   
+builder.Services.AddSwaggerGen();
 
 
 // 3. Add DbContext (ví dụ dùng SQLite)
@@ -30,6 +39,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 //builder.Services.AddDbContext<AppDbContext>(options => (builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 var app = builder.Build();
 
@@ -40,6 +50,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
     // end for swagger
+    app.UseAuthentication();
+    app.UseAuthorization();
 }
 
 app.UseHttpsRedirection();

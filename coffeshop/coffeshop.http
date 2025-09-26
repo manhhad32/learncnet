@@ -1,17 +1,30 @@
 @coffeshop_HostAddress = http://localhost:5124
 
 GET {{coffeshop_HostAddress}}/weatherforecast/
-Accept: application/json
+Content-Type: application/json
 
 ###
 GET {{coffeshop_HostAddress}}/api/Product/1
-Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6ImI1NzVhYjIyLWU2ZDgtNDJmOS05MDI1LWFhYzMwZTViYTFjOCIsImV4cCI6MTc1ODkwNjg5MSwiaXNzIjoiQ29mZmVTaG9wRGVtbyIsImF1ZCI6IlRlc3QifQ.rAbA7zHtVy2_umF-_-zXkHJs0nZjgZw6M1zhQeNJRXg
+Content-Type: application/json
 
 ###
 
 GET {{coffeshop_HostAddress}}/api/Product/2
-Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjQ1MmIwYzZmLWRhOTYtNGNjYy04NmY2LWQ3MjA3ZDYwMWE3MSIsImV4cCI6MTc1ODkwNzI1NiwiaXNzIjoiQ29mZmVTaG9wRGVtbyIsImF1ZCI6IlRlc3QifQ.otbEGX0EGtajU-J44hkld_ANqi6lx7ecNXZntjLQyg8
+Content-Type: application/json
 
 ###
 GET {{coffeshop_HostAddress}}/api/Product/3
-Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjQ1MmIwYzZmLWRhOTYtNGNjYy04NmY2LWQ3MjA3ZDYwMWE3MSIsImV4cCI6MTc1ODkwNzI1NiwiaXNzIjoiQ29mZmVTaG9wRGVtbyIsImF1ZCI6IlRlc3QifQ.otbEGX0EGtajU-J44hkld_ANqi6lx7ecNXZntjLQyg8
+Content-Type: application/json
+
+
+###
+POST {{coffeshop_HostAddress}}/api/user/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password123"
+}

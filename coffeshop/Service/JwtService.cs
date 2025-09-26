@@ -16,23 +16,23 @@ namespace Coffeshop.Service
 
         public string GenerateJwtToken(string username)
         {
-            var jwtKey = _configuration["Jwt:Key"];
-            var jwtIssuer = _configuration["Jwt:Issuer"];
-            var jwtAudience = _configuration["Jwt:Audience"];
+            string? jwtKey = _configuration["Jwt:Key"];
+            string? jwtIssuer = _configuration["Jwt:Issuer"];
+            string? jwtAudience = _configuration["Jwt:Audience"];
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
+            SigningCredentials credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             // Tạo các claims (thông tin đi kèm trong token)
-            var claims = new[]
-            {
+            Claim[] claims =
+            [
                 new Claim(JwtRegisteredClaimNames.Sub, username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 // Bạn có thể thêm các claims khác ở đây, ví dụ như vai trò (role)
                 // new Claim(ClaimTypes.Role, "Admin")
-            };
+            ];
 
-            var token = new JwtSecurityToken(
+            JwtSecurityToken token = new JwtSecurityToken(
                 issuer: jwtIssuer,
                 audience: jwtAudience,
                 claims: claims,

@@ -8,9 +8,9 @@ namespace Coffeshop.Configurations
     {
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            var key = configuration["Jwt:Key"];
-            var issuer = configuration["Jwt:Issuer"];
-            var audience = configuration["Jwt:Audience"];
+            string? key = configuration["Jwt:Key"];
+            string? issuer = configuration["Jwt:Issuer"];
+            string? audience = configuration["Jwt:Audience"];
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

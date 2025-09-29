@@ -12,7 +12,8 @@ namespace Coffeshop.Service
         }
         public async Task<Product?> GetProductByIdAsync(int id)
         {
-            return await productRepository.GetByIdAsync(id);
+            //return await productRepository.GetByIdAsync(id);
+            return await productRepository.GetByIdNativeAsync(id);
         }
     }
 }

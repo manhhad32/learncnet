@@ -1,9 +1,13 @@
 
 using Coffeshop.Configurations;
+using Coffeshop.Data;
 using Coffeshop.Mapping;
 using Coffeshop.Repositories;
 using Coffeshop.Service;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore; // Thêm using này
+using Npgsql.EntityFrameworkCore.PostgreSQL; // Thêm using này
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,12 +27,10 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 
-// 3. Add DbContext (ví dụ dùng SQLite)
-/*
+// 3. Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-*/
 // 4. Add AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 

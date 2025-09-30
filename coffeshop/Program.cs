@@ -42,12 +42,13 @@ namespace Coffeshop.Api
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            else
+            {
+                app.UseAuthentication();
+                app.UseAuthorization();
+            }
 
             app.UseHttpsRedirection();
-
-            app.UseAuthentication();
-            app.UseAuthorization();
-
             app.MapControllers();
 
             app.Run();

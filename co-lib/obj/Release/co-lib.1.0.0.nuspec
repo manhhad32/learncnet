@@ -5,9 +5,16 @@
     <version>1.0.0</version>
     <authors>co-lib</authors>
     <description>Package Description</description>
-    <repository type="git" commit="2f4138c448ae0fffbdf0fd9cc8a42915b175c1e1" />
+    <repository type="git" commit="68373ea73e74d99a2f28bd4b3a2186f5022ed1ac" />
     <dependencies>
-      <group targetFramework="net9.0" />
+      <group targetFramework="net9.0">
+        <dependency id="AutoMapper.Extensions.Microsoft.DependencyInjection" version="12.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="9.0.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc" version="2.3.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.OpenApi" version="9.0.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.9" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore" version="9.0.5" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>

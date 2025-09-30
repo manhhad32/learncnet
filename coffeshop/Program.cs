@@ -1,5 +1,5 @@
 
-using Coffeshop.Configurations;
+using co_lib;
 using Coffeshop.Data;
 using Coffeshop.Mapping;
 using Coffeshop.Repositories;
@@ -11,20 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL; // Thêm using này
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddJwtAuthentication(builder.Configuration);
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add(new AuthorizeFilter()); // Áp dụng bảo vệ toàn bộ API
-});
-
-
-// 1. Add services to the container
-builder.Services.AddControllers();
-
-// 2. Add Swagger
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers();
-builder.Services.AddSwaggerGen();
+builder.Services.AddedServices(builder.Configuration);
 
 
 // 3. Add DbContext

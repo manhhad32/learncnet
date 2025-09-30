@@ -1,8 +1,10 @@
+using Microsoft.Extensions.DependencyInjection;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
 
-namespace Coffeshop.Configurations
+namespace co_lib.Configurations
 {
     public static class JwtAuthenticationConfig
     {

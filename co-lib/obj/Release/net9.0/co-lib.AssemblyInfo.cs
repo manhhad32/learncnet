@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("co-lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f4138c448ae0fffbdf0fd9cc8a42915b175c1e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68373ea73e74d99a2f28bd4b3a2186f5022ed1ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("co-lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("co-lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,3 +10,4 @@
 /Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/refint/co-lib.dll
 /Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.pdb
 /Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/ref/co-lib.dll
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.csproj.AssemblyReference.cache

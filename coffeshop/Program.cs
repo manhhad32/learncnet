@@ -34,6 +34,7 @@ builder.Services.AddScoped<ILoginService, LoginService>();
 var app = builder.Build();
 
 // 6. Configure the HTTP request pipeline
+/*
 if (app.Environment.IsDevelopment())
 {
     // for swagger
@@ -45,7 +46,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection();
+*/
+//app.UseHttpsRedirection();
 
 //app.UseAuthorization();
 

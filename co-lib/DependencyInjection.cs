@@ -26,6 +26,13 @@ namespace co_lib
             // 3. Thêm Swagger
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddAuthentication();
+            services.AddAuthorization();
+
+
+            // Đăng ký dịch vụ để *tạo ra* tài liệu Swagger
+            services.AddEndpointsApiExplorer();
+            services.AddSwaggerGen(); 
             
             // Return services để có thể gọi nối tiếp (chaining) nếu cần
             return services;

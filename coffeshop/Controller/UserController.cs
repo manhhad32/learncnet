@@ -1,4 +1,4 @@
-using Coffeshop.Dto;
+using co_lib.Dtos;
 using Coffeshop.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

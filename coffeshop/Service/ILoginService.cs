@@ -1,5 +1,4 @@
-using Coffeshop.Dto;
-
+using co_lib.Dtos;
 namespace Coffeshop.Service
 {
     public interface ILoginService

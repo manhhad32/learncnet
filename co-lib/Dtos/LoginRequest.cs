@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Coffeshop.Dto
+namespace co_lib.Dtos
 {
     public class LoginRequest
     {

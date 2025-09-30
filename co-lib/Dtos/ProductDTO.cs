@@ -1,4 +1,4 @@
-namespace Coffeshop.Dto
+namespace co_lib.Dtos
 {
     public class ProductDto
     {

@@ -1,5 +1,5 @@
 using AutoMapper;
-using Coffeshop.Dto;
+using co_lib.Dtos;
 using Coffeshop.Models;
 
 namespace Coffeshop.Mapping
@@ -8,7 +8,7 @@ namespace Coffeshop.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Product, ProductDto>().ReverseMap();   
+            CreateMap<Product, ProductDto>().ReverseMap();
         }
     }
 }

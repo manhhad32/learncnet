@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>co-lib</id>
+    <version>1.0.0</version>
+    <authors>co-lib</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="2f4138c448ae0fffbdf0fd9cc8a42915b175c1e1" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/bin/Release/net9.0/co-lib.dll" target="lib/net9.0/co-lib.dll" />
+  </files>
+</package>

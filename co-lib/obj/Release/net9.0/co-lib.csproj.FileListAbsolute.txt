@@ -1,0 +1,12 @@
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/bin/Release/net9.0/co-lib.deps.json
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/bin/Release/net9.0/co-lib.dll
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/bin/Release/net9.0/co-lib.pdb
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.AssemblyInfoInputs.cache
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.AssemblyInfo.cs
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.csproj.CoreCompileInputs.cache
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.sourcelink.json
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.dll
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/refint/co-lib.dll
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/co-lib.pdb
+/Users/nguyenmanhha/Desktop/dotnet/learncnet/co-lib/obj/Release/net9.0/ref/co-lib.dll
